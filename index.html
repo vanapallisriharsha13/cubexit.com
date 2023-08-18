@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDFGPT Documentation</title>
+    <style>
+        /* Reset some default styles */
+        body, h1, h2, h3, p {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        
+        /* Header */
+        header {
+            background-color: #2a3b4c;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        
+        .logo {
+            width: 150px;
+            margin: 1em auto;
+            display: block;
+        }
+        
+        h1 {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+        }
+        
+        /* Navigation */
+        nav {
+            background-color: #333;
+            text-align: center;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            display: inline-block;
+        }
+        
+        /* Container */
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 2em;
+            background-color: white;
+        }
+        
+        h2 {
+            font-size: 1.5em;
+            margin-top: 1em;
+        }
+        
+        p {
+            margin-bottom: 1em;
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: #2a3b4c;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://cubexit.com/wp-content/uploads/2021/10/cxit_logo-1.png" alt="Cubexit Logo" class="logo">
+        <h1>PDFGPT: Interactive Chat Application for PDF Documents</h1>
+    </header>
+    
+    <nav>
+        <a href="#introduction">Introduction</a>
+        <a href="#overview">Project Overview</a>
+        <a href="#setup">Installation and Setup</a>
+        <a href="#structure">Application Structure</a>
+        <a href="#functionality">Functionality and Components</a>
+        <a href="#usage">How to Use</a>
+        <a href="#conclusion">Conclusion</a>
+    </nav>
+    
+    <div class="container">
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>Welcome to the theoretical documentation for PDFGPT, an interactive chat application for PDF documents developed by Cubexit. PDFGPT leverages large language models and natural language processing techniques to allow users to have conversations with a chatbot that understands the content of uploaded PDF documents.</p>
+        </section>
+        
+        <section id="overview">
+            <h2>Project Overview</h2>
+            <p>PDFGPT, initially known as "pdfgpt," is a Streamlit-based application that integrates various libraries, including Streamlit, PyPDF2, langchain, and more. The application allows users to upload multiple PDF documents and ask questions related to the content of these documents. The chatbot, powered by a conversational model, provides relevant responses based on the information extracted from the PDFs.</p>
+        </section>
+        
+        <section id="setup">
+            <h2>Installation and Setup</h2>
+            <p>Before running the PDFGPT application, ensure that you have the required libraries installed. You can set up the environment by following these steps:</p>
+            <ol>
+                <li>Clone the PDFGPT repository from the Cubexit GitHub account.</li>
+                <li>Create a virtual environment using your preferred tool (e.g., virtualenv or conda).</li>
+                <li>Install the required packages using the provided <code>requirements.txt</code> file.</li>
+            </ol>
+        </section>
+        
+        <section id="structure">
+            <h2>Application Structure</h2>
+            <p>The PDFGPT application consists of the following major components:</p>
+            <ul>
+                <li><strong>User Interface:</strong> Handles user interactions, input queries, and displays the chat history.</li>
+                <li><strong>PDF Text Extraction:</strong> Extracts text content from uploaded PDF documents.</li>
+                <li><strong>Text Chunking:</strong> Splits large text content into smaller chunks for efficient processing.</li>
+                <li><strong>Text Embeddings and Vector Store:</strong> Generates embeddings for text chunks and creates a vector store for retrieval.</li>
+                <li><strong>Conversational Model:</strong> Utilizes a conversational model to respond to user queries.</li>
+                <li><strong>User Interaction:</strong> Orchestrates the user interaction flow and displays the conversation history.</li>
+            </ul>
+        </section>
+        
+        <section id="functionality">
+            <h2>Functionality and Components</h2>
+            <h3>User Interface</h3>
+            <p>The application's user interface is built using the Streamlit library. It includes a text input field for user queries and a sidebar for uploading PDF documents. When a user asks a question, the conversation history is displayed on the page.</p>
+            
+            <h3>PDF Text Extraction</h3>
+            <p>The <code>get_pdf_text(pdf_docs)</code> function extracts text content from the uploaded PDF documents using the PyPDF2 library. It aggregates the text from all pages of all PDFs into a single string.</p>
+            
+            <!-- More sections go here... -->
+            
+        </section>
+        
+        <section id="usage">
+            <h2>How to Use</h2>
+            <p>To use the PDFGPT application:</p>
+            <ol>
+                <li>Clone the PDFGPT repository and set up the environment.</li>
+                <li>Run the application script.</li>
+                <li>Upload one or more PDF documents using the sidebar.</li>
+                <li>Enter a question in the text input field and click "Ask."</li>
+                <li>View the chatbot's responses and engage in a conversation.</li>
+            </ol>
+        </section>
+        
+        <section id="conclusion">
+            <h2>Conclusion</h2>
+            <p>PDFGPT, developed by Cubexit, is an innovative application that combines natural language processing, PDF text extraction, and chatbot technology. Users can interact with the application by asking questions about uploaded PDF documents, and the chatbot responds with relevant information. This theoretical documentation provides insights into the architecture, components, and usage of PDFGPT, showcasing how it enhances document interaction through AI-driven conversations.</p>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 Cubexit. All rights reserved.</p>
+   
